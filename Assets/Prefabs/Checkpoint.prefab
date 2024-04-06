@@ -2253,6 +2253,7 @@ GameObject:
   - component: {fileID: 147381268749445669}
   - component: {fileID: 8211761487053756757}
   - component: {fileID: 5662169798875758811}
+  - component: {fileID: 3465569786349607145}
   m_Layer: 0
   m_Name: ZoneActivation
   m_TagString: Untagged
@@ -2346,6 +2347,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3465569786349607145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777248957947752471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef7a955bea30c843a17a939ee227063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6193986956762562878
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,7 +3099,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1409237483499590780}
-  - component: {fileID: 8772033079110170511}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Untagged
@@ -3118,16 +3130,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8772033079110170511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9003546502782175858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f8596c4dfbc8c442bd94c412c5ede90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zoneTouche: {fileID: 5777248957947752471}
