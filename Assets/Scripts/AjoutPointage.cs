@@ -4,7 +4,25 @@ using UnityEngine;
 
 public class AjoutPointage : MonoBehaviour
 {
-   private void OnTriggerEnter(){
-    print("Un objet est entré dans la zone rouge");
-   }
+
+   [SerializeField] GameObject zoneTrigger;
+   [SerializeField] GameObject lumiereBleu;
+   [SerializeField] GameObject lumiereRouge;
+   private GameManager gameManager;
+
+
+private void Awake()
+    {
+        gameManager = GameObject.FindObjectOfType<GameManager>();
+    }
+
+   public void OnTriggerEnter(Collider other)
+{
+    if (other.CompareTag("Player")){
+      gameManager.AjoutPoints();
+      zoneTrigger.SetActive(false);
+      lumiereRouge.SetActive(false);
+      lumiereBleu.SetActive(true);
+    }
+}
 }

@@ -2359,6 +2359,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef7a955bea30c843a17a939ee227063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zoneTrigger: {fileID: 5777248957947752471}
+  lumiereBleu: {fileID: 4050807161272386531}
+  lumiereRouge: {fileID: 5488511894591030374}
+  score: 0
 --- !u!1 &6193986956762562878
 GameObject:
   m_ObjectHideFlags: 0
