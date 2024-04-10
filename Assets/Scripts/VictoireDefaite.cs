@@ -13,31 +13,32 @@ public class VictoireDefaite : MonoBehaviour
 
     void Start()
     {
-        // Récupérer le GameManager au démarrage
         gameManager = FindObjectOfType<GameManager>();
-        // Mettre à jour la valeur initiale du pointage
-        valeur = gameManager.pointage;
+        MettreAJourValeur();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-           
             gameManager.AjoutPoints();
-          
-            valeur = gameManager.pointage;
-          
+
             zoneTrigger.SetActive(false);
             lumiereRouge.SetActive(false);
             lumiereBleu.SetActive(true);
-         
+
             VictoireOuDefaite();
         }
     }
 
+    public void MettreAJourValeur()
+    {
+        valeur = gameManager.pointage;
+    }
+
     public void VictoireOuDefaite()
     {
+        MettreAJourValeur();
         if (valeur >= 6)
         {
             ChangementScene("SceneFinReussi");

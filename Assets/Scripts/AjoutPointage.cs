@@ -5,9 +5,9 @@ using UnityEngine;
 public class AjoutPointage : MonoBehaviour
 {
 
-   [SerializeField] GameObject zoneTrigger;
-   [SerializeField] GameObject lumiereBleu;
-   [SerializeField] GameObject lumiereRouge;
+    [SerializeField] GameObject zoneTrigger;
+    [SerializeField] GameObject lumiereBleu;
+    [SerializeField] GameObject lumiereRouge;
    private GameManager gameManager;
 
 
